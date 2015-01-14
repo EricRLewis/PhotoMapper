@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.10" >
+
+        <Button
+            android:id="@+id/viewPhoto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="viewButtonClicked"
+            android:text="View" />
+
+        <Button
+            android:id="@+id/removePhoto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="removeButtonClicked"
+            android:text="Remove" />
+
+        <Button
+            android:id="@+id/addPhoto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="addButtonClicked"
+            android:text="Add" />
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="436dp"
+            android:layout_gravity="bottom"
+            android:apiKey="0BG6TGyy_eNuX-KLF9gyxoubQKBlJjHL7Vh1xyw"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </FrameLayout>
+
+</LinearLayout>
